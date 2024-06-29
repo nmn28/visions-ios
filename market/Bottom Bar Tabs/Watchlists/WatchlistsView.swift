@@ -35,7 +35,7 @@ struct WatchlistsView: View {
 
         VStack {
 
-            WatchlistsCustomPicker()
+//            WatchlistsCustomPicker()
 
         }
         .navigationTitle("")

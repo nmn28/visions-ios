@@ -340,13 +340,13 @@ struct TweetView: View {
                 
                 (
                     
-                    Text("Kavsoft  ")
+                    Text("Jane Doe")
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                         
                         +
                         
-                        Text("@_Kavsoft")
+                        Text("@_JaneDoe")
                         .foregroundColor(.gray)
                 )
                 

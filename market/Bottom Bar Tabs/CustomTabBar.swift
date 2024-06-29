@@ -10,21 +10,20 @@ import SwiftUI
 struct CustomTabBar: View {
     @Binding var selectedNavigationTab: Int
     private let icons = ["eye", "flowchart", "briefcase", "wand.and.stars", "person.3", "bell"]
-//    @Binding var isTabBarHidden: Visibility
-    var body: some View {
 
+    var body: some View {
         Spacer()
         CustomDivider()
 
         HStack {
             ForEach(0..<icons.count, id: \.self) { index in
                 TabBarButton(
-                    iconName: selectedNavigationTab == index + 1 ? "\(icons[index]).fill" : icons[index],
+                    iconName: icons[index],
                     isSelected: selectedNavigationTab == index + 1
                 ) {
                     self.selectedNavigationTab = index + 1
                 }
-                
+
                 if index < icons.count - 1 {
                     Spacer() // Add a spacer between buttons, but not after the last one
                 }
@@ -33,9 +32,6 @@ struct CustomTabBar: View {
         .padding(.horizontal)
         .frame(height: 38)
     }
-//    .background(Color.primary)
-//    .opacity(isScrolled ? 0 : 1) // Hide or show based on isScrolled
-//    .animation(.easeInOut, value: isScrolled)
 }
 
 struct TabBarButton: View {
@@ -49,10 +45,9 @@ struct TabBarButton: View {
             VStack {
                 Image(systemName: iconName)
                     .imageScale(.large)
-                    
                     .frame(width: 44, height: 60)
                     .foregroundColor(isSelected ? Color.blue : Color.gray)
-                    .background(isSelected && iconName == "wand.and.stars" ? Color.blue.opacity(0.1) : Color.clear) // Add a background for the wand.and.stars when selected
+//                    .background(isSelected && iconName == "wand.and.stars" ? Color.blue.opacity(0.1) : Color.clear) // Add a background for the wand.and.stars when selected
                     .overlay(
                         // Badge for new alerts
                         hasAlert ? Circle().fill(Color.red).frame(width: 10, height: 10).offset(x: 10, y: -10) : nil
@@ -64,7 +59,6 @@ struct TabBarButton: View {
 
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        // Assuming Visibility is an enum with cases .visible and .hidden
         CustomTabBar(selectedNavigationTab: .constant(1))
     }
 }

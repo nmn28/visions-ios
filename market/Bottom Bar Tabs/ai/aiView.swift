@@ -65,7 +65,7 @@ struct aiView: View {
 
                         VStack {
                             HStack(spacing: 0) {
-                                ForEach(Array("Forecast.ai".enumerated()), id: \.offset) { index, character in
+                                ForEach(Array("Visions.ai".enumerated()), id: \.offset) { index, character in
                                     AnimatedCharacterView(character: String(character), delay: (Double(index) + 1) * 0.05)
                                 }
                             }

@@ -11,14 +11,14 @@ struct CategoriesSuggestions: View {
     @ObservedObject private var navBarInfo = NavBarInfo.shared
     
     var body: some View {
-        ScrollView {
-            NavBarScrollTracker()
-            
+//        ScrollView {
+//            NavBarScrollTracker()
+//            
             VStack {
-                Rectangle()
-                    .fill(Color.clear)
-                    .frame(width: 10, height: navBarInfo.height)
-                
+//                Rectangle()
+//                    .fill(Color.clear)
+//                    .frame(width: 10, height: navBarInfo.height)
+//                
                 ScrollView {
                     VStack(alignment: .leading) {
                         
@@ -63,7 +63,7 @@ struct CategoriesSuggestions: View {
         }
         
     }
-}
+//}
 
 #Preview {
     CategoriesSuggestions()

@@ -75,15 +75,15 @@ struct MainSideMenu: View {
                 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 12) {
-//                        mainTabsButton
-//                        if mainTabsExpanded {
-//                            ForEach(Tab.allCases.prefix(6), id: \.self) { tab in
-//                                SideBarButton(tab: tab, isSelected: viewModel.selectedNavigationTab == tab.index) {
-//                                    viewModel.handleTabSelection(tab.index)
-//                                    self.isShowingSideMenu = false
-//                                }
-//                            }
-//                        }
+                        mainTabsButton
+                        if mainTabsExpanded {
+                            ForEach(Tab.allCases.prefix(6), id: \.self) { tab in
+                                SideBarButton(tab: tab, isSelected: viewModel.selectedNavigationTab == tab.index) {
+                                    viewModel.handleTabSelection(tab.index)
+                                    self.isShowingSideMenu = false
+                                }
+                            }
+                        }
 //                        
 //                        Divider()
                         
@@ -178,7 +178,7 @@ struct MainSideMenu: View {
                     .foregroundColor(.blue)
                     .frame(width: 45, alignment: .center)  // Ensures consistent icon size
                 
-                Text("Features")
+                Text("More")
                     .foregroundColor(.primary)
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)  // Text alignment and spacing

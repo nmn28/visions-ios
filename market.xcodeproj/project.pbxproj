@@ -84,6 +84,7 @@
 		24C469672BB41E4E007CA92E /* TwitterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C469662BB41E4E007CA92E /* TwitterProfile.swift */; };
 		24C4D8D32BD0EC43005ACB70 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4D8D22BD0EC43005ACB70 /* LeaderboardView.swift */; };
 		24C4F41B2B1A4892003B4277 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4F41A2B1A4892003B4277 /* NotificationsView.swift */; };
+		24C578752C175B3E0060DA53 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C578742C175B3E0060DA53 /* FloatingButton.swift */; };
 		24C57A462B1E4F8900F9BC49 /* MarketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C57A452B1E4F8900F9BC49 /* MarketsView.swift */; };
 		24C57A482B1E523200F9BC49 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C57A472B1E523200F9BC49 /* ProfileView.swift */; };
 		24C57A4A2B1E525600F9BC49 /* NewActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C57A492B1E525600F9BC49 /* NewActionView.swift */; };
@@ -311,6 +312,7 @@
 		24C469662BB41E4E007CA92E /* TwitterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterProfile.swift; sourceTree = "<group>"; };
 		24C4D8D22BD0EC43005ACB70 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		24C4F41A2B1A4892003B4277 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		24C578742C175B3E0060DA53 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		24C57A452B1E4F8900F9BC49 /* MarketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsView.swift; sourceTree = "<group>"; };
 		24C57A472B1E523200F9BC49 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		24C57A492B1E525600F9BC49 /* NewActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActionView.swift; sourceTree = "<group>"; };
@@ -754,6 +756,7 @@
 				247341BB2C01733D00A511CF /* DateTF */,
 				24CC171C2BB99E360015DC81 /* HapticFeedback.swift */,
 				247341632BFD72AB00A511CF /* MainView.swift */,
+				24C578742C175B3E0060DA53 /* FloatingButton.swift */,
 				24FF90DE2BF33ED10098DA3A /* SlideInTransition.swift */,
 				24E495AB2BE62DBE00412841 /* NewView.swift */,
 				24CE38572BB7A25F00077573 /* CustomPicker.swift */,
@@ -1357,6 +1360,7 @@
 				24FA324F2B11BEE200048696 /* Chart+Stubs.swift in Sources */,
 				24FA322B2B11675200048696 /* SearchViewModel.swift in Sources */,
 				24C57A4D2B1E843200F9BC49 /* IdeaPostingViewModel.swift in Sources */,
+				24C578752C175B3E0060DA53 /* FloatingButton.swift in Sources */,
 				24D6E3D72B3CF70D00770943 /* StyledNavButton.swift in Sources */,
 				242316FF2B390844007CC65B /* ChemistryView.swift in Sources */,
 				24F342532B1F90C700BB2292 /* NetworkManager.swift in Sources */,

@@ -132,13 +132,8 @@ struct FinancesView: View {
             CustomToolbar(
                 leftContent: {
                     AnyView(VStack(alignment: .leading, spacing: -4) {
-                        Text("Forecast.ai")
-                            .font(.title3).fontWeight(.heavy)
-                            .bold()
-                        Text("date")
-                            .font(.title3).fontWeight(.heavy)
-                            .bold()
-                            .foregroundColor(Color(uiColor: .secondaryLabel))
+                        Text("Visions")
+                            .font(.title3)
                     })
                 },
                 centerContent: {

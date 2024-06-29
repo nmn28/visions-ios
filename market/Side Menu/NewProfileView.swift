@@ -76,7 +76,7 @@ struct NewProfileView: View {
                                
                                 UserImage(imageName: user.imageName, isOnline: user.isOnline, size: 45)
                                 VStack (alignment: .leading) {
-                                    Text("Kavsoft")
+                                    Text("Jane Doe")
                                         .fontWeight(.bold)
                                         
                                     Text("150 Predictions")
@@ -134,13 +134,13 @@ struct NewProfileView: View {
                             UserImage(imageName: user.imageName, isOnline: user.isOnline, size: 50)
                                 
                             VStack {
-                                Text("Kavsoft")
+                                Text("Jane Doe")
                                     .font(.title2)
                                     .fontWeight(.bold)
                                     
                                     .foregroundColor(.primary)
                                 
-                                Text("@_Kavsoft")
+                                Text("@_JaneDoe")
                                     .foregroundColor(.gray)
                             }
                             Spacer()
@@ -158,7 +158,7 @@ struct NewProfileView: View {
                         }
                         .padding(.bottom,10)
                         
-                        Text("Kavsoft is a channel where I make videos on SwiftUI Website: https://kavsoft.dev, Patreon: http://patreon.com/kavsoft")
+                        Text("Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.")
                         
                         HStack(spacing: 5){
                             
@@ -203,9 +203,9 @@ struct NewProfileView: View {
                             
                             HStack(spacing: 0){
                                 
-                                TabButton(title: "Tweets", currentTab: $currentTab, animation: animation)
+                                TabButton(title: "Predictions", currentTab: $currentTab, animation: animation)
                                 
-                                TabButton(title: "Tweets & Likes", currentTab: $currentTab, animation: animation)
+                                TabButton(title: "Bets", currentTab: $currentTab, animation: animation)
                                 
                                 TabButton(title: "Media", currentTab: $currentTab, animation: animation)
                                 
@@ -239,7 +239,7 @@ struct NewProfileView: View {
                     VStack(spacing: 18){
                         
                         // Sample Tweets...
-                        TweetView(tweet: "New iPhone 12 Purple Review By iJustine 🥳🥳🥳🥳.......", tweetImage: "post")
+                        TweetView(tweet: "Prediction here", tweetImage: "post")
                         
                         Divider()
                         
@@ -386,13 +386,13 @@ struct profilepostView: View {
                 
                 (
                     
-                    Text("Kavsoft  ")
+                    Text("Jane Doe")
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                         
                         +
                         
-                        Text("@_Kavsoft")
+                        Text("@_JaneDoe")
                         .foregroundColor(.gray)
                 )
                 

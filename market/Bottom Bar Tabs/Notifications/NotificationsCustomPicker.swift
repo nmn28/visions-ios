@@ -57,13 +57,13 @@ struct NotificationsCustomToolbar: View {
         CustomToolbar(
             leftContent: {
                 AnyView(VStack(alignment: .leading, spacing: -4) {
-                    Text("Forecast.ai")
+                    Text("Visions")
                         .font(.title3).fontWeight(.heavy)
                         .bold()
-                    Text("date")
-                        .font(.title3).fontWeight(.heavy)
-                        .bold()
-                        .foregroundColor(Color(uiColor: .secondaryLabel))
+//                    Text("date")
+//                        .font(.title3).fontWeight(.heavy)
+//                        .bold()
+//                        .foregroundColor(Color(uiColor: .secondaryLabel))
                 })
             },
             centerContent: {
@@ -147,9 +147,9 @@ struct NotificationsTabView: View {
                             }
                         )
                             .frame(width: geometry.size.width, height: geometry.size.height)
-                    case 1:
-                        ComplexView()
-                            .frame(width: geometry.size.width, height: geometry.size.height)
+//                    case 1:
+//                        ComplexView()
+//                            .frame(width: geometry.size.width, height: geometry.size.height)
                         // Add more cases as needed for additional tabs
                     default:
                         Text("Tab \(index + 1)")

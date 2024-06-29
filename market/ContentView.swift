@@ -56,7 +56,7 @@ struct ContentView: View {
     @State private var isShowingSideMenu = false
     @State private var user: User = User.stub
     @State private var showActionBar = false
-
+    @State private var isShowingNewPostView = false
     
     var body: some View {
         AnimatedSideBar(
@@ -74,14 +74,14 @@ struct ContentView: View {
                             NewProfileView(user: User.stub)
                         case 1:
 //                            NewWatchlistsView(showActionBar: $showActionBar)
-                            WatchlistsView(
-                                selectedWatchlistsTab: $viewModel.selectedWatchlistsTab )
-                            .environmentObject(AppViewModel())
-                            
+//                            WatchlistsView(
+//                                selectedWatchlistsTab: $viewModel.selectedWatchlistsTab )
+//                            .environmentObject(AppViewModel())
+                            WatchlistsCustomPicker(viewModel: viewModel, isOpened: $isOpened)
                         case 2:
 //                            ExploreView(isOpened: $isOpened)
 //                                .environmentObject(viewModel)
-                            CategoriesView()
+                            CategoriesCustomPicker(viewModel: viewModel, isOpened: $isOpened)
                         case 3:
                             FinancesView(selectedFinancesTab: $viewModel.selectedFinancesTab, selectedPortfolioTab: $viewModel.selectedPortfolioTab, isOpened: $isOpened)
                         case 4:
@@ -93,10 +93,12 @@ struct ContentView: View {
                         case 7:
                             InstructionsView()
                         case 8:
-                            LeaderboardView()
+                            MembershipView()
                         case 9:
-                            MainCalendarView(text: MainCalendarView.$searchText, onSearchChanged: { _ in })
+                            LeaderboardView()
                         case 10:
+                            MainCalendarView(text: MainCalendarView.$searchText, onSearchChanged: { _ in })
+                        case 11:
                             MapView()
                         default:
                             Text("Default View")
